@@ -46853,7 +46853,7 @@
 													"height": 13,
 													"autoResize": false,
 													"underline": false,
-													"text": "-raca: RacaEnum",
+													"text": "-raca",
 													"horizontalAlignment": 0,
 													"verticalAlignment": 5
 												},
@@ -46957,7 +46957,7 @@
 													"height": 13,
 													"autoResize": false,
 													"underline": false,
-													"text": "-estadoCivil: EstadoCivilEnum",
+													"text": "-estadoCivil",
 													"horizontalAlignment": 0,
 													"verticalAlignment": 5
 												},
@@ -47243,7 +47243,7 @@
 													"height": 13,
 													"autoResize": false,
 													"underline": false,
-													"text": "-endereco: Endereco",
+													"text": "-endereco",
 													"horizontalAlignment": 0,
 													"verticalAlignment": 5
 												},
@@ -48531,7 +48531,7 @@
 													"height": 13,
 													"autoResize": false,
 													"underline": false,
-													"text": "-tipo: TipoUsuarioEnum",
+													"text": "-tipo",
 													"horizontalAlignment": 0,
 													"verticalAlignment": 5
 												}
@@ -49242,13 +49242,13 @@
 											"fontColor": "#000000",
 											"font": "Arial;13;0",
 											"showShadow": true,
-											"left": 943,
-											"top": 1124,
+											"left": 915,
+											"top": 1083,
 											"width": 64,
 											"height": 13,
 											"autoResize": false,
-											"alpha": 0.15057572832450017,
-											"distance": 146.6594695203825,
+											"alpha": -0.10367321369358651,
+											"distance": 173.93389548906217,
 											"hostEdge": {
 												"$ref": "AAAAAAFNXrPdAlw/JTU="
 											},
@@ -50392,13 +50392,13 @@
 											"fontColor": "#000000",
 											"font": "Arial;13;0",
 											"showShadow": true,
-											"left": 867,
-											"top": 1121,
+											"left": 864,
+											"top": 1168,
 											"width": 39,
 											"height": 13,
 											"autoResize": false,
-											"alpha": 1.5707963267948966,
-											"distance": 30,
+											"alpha": -1.7444860883298092,
+											"distance": 17.26267650163207,
 											"hostEdge": {
 												"$ref": "AAAAAAFNXrPdElxizvM="
 											},
@@ -56429,9 +56429,7 @@
 									"visibility": "private",
 									"isStatic": false,
 									"isLeaf": false,
-									"type": {
-										"$ref": "AAAAAAFNacHc0Y46Ins="
-									},
+									"type": "",
 									"isReadOnly": false,
 									"isOrdered": false,
 									"isUnique": false,
@@ -56503,9 +56501,7 @@
 									"visibility": "private",
 									"isStatic": false,
 									"isLeaf": false,
-									"type": {
-										"$ref": "AAAAAAFNXrPdElzD4Hk="
-									},
+									"type": "",
 									"isReadOnly": false,
 									"isOrdered": false,
 									"isUnique": false,
@@ -56703,9 +56699,7 @@
 									"visibility": "private",
 									"isStatic": false,
 									"isLeaf": false,
-									"type": {
-										"$ref": "AAAAAAFNXrPdElyr5Dk="
-									},
+									"type": "",
 									"isReadOnly": false,
 									"isOrdered": false,
 									"isUnique": false,
@@ -57327,7 +57321,7 @@
 											"$ref": "AAAAAAFNXrPdElygPeM="
 										},
 										"visibility": "public",
-										"navigable": true,
+										"navigable": false,
 										"aggregation": "none",
 										"multiplicity": "1",
 										"isReadOnly": false,
@@ -57519,9 +57513,7 @@
 									"visibility": "private",
 									"isStatic": false,
 									"isLeaf": false,
-									"type": {
-										"$ref": "AAAAAAFNXrPdEly/UDs="
-									},
+									"type": "",
 									"isReadOnly": false,
 									"isOrdered": false,
 									"isUnique": false,
@@ -57590,7 +57582,7 @@
 										},
 										"visibility": "public",
 										"navigable": true,
-										"aggregation": "composite",
+										"aggregation": "none",
 										"multiplicity": "1",
 										"isReadOnly": false,
 										"isOrdered": false,
@@ -57609,7 +57601,7 @@
 										},
 										"visibility": "public",
 										"navigable": true,
-										"aggregation": "none",
+										"aggregation": "composite",
 										"multiplicity": "0..1",
 										"isReadOnly": false,
 										"isOrdered": false,
@@ -57982,7 +57974,7 @@
 											"$ref": "AAAAAAFNah9TM1/71qI="
 										},
 										"visibility": "public",
-										"navigable": true,
+										"navigable": false,
 										"aggregation": "none",
 										"multiplicity": "0..*",
 										"isReadOnly": false,
@@ -58716,7 +58708,7 @@
 											"$ref": "AAAAAAFN5ezKl88dYAY="
 										},
 										"visibility": "public",
-										"navigable": true,
+										"navigable": false,
 										"aggregation": "shared",
 										"multiplicity": "0..1",
 										"isReadOnly": false,
