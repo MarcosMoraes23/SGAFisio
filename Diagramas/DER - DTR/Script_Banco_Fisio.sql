@@ -62,7 +62,7 @@ rua varchar(64) not null,
 cep varchar(10),
 numero integer not null,
 complemento varchar(64) not null,
-horario_alocado boolean,
+turno_alocado integer,
 periodo integer not null,
 
 id_usuario bigint not null
