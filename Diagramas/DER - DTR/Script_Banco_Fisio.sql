@@ -1,6 +1,16 @@
 -----------------------------------------SCRIPT BANCO SGAFisio-----------------------------------------------------
 CREATE DATABASE fisioterapia;
 
+create sequence sequence_usuario;
+create sequence sequence_anamnese;
+create sequence sequence_paciente;
+create sequence sequence_secretaria;
+create sequence sequence_supervisor;
+create sequence sequence_atendimento;
+create sequence sequence_agenda;
+create sequence sequence_fila_de_espera;
+create sequence sequence_agenda;
+
 CREATE TABLE fila_de_espera (
 id bigint not null,
 data_inclusao date not null,
