@@ -9,7 +9,7 @@ create sequence sequence_supervisor;
 create sequence sequence_atendimento;
 create sequence sequence_agenda;
 create sequence sequence_fila_de_espera;
-create sequence sequence_agenda;
+create sequence sequence_estagiario;
 
 CREATE TABLE fila_de_espera (
 id bigint not null,
