@@ -90,7 +90,7 @@ id_agenda bigint not null
 CREATE TABLE anamnese (
 id bigint not null,
 data_anamnese date,
-histórico_familiar text,
+historico_familiar text,
 historico_social text,
 historico_patologico text,
 historico_doenca_atual text,
@@ -172,6 +172,7 @@ ALTER TABLE usuario ADD CONSTRAINT usuario_uk UNIQUE(usuario);
 ALTER TABLE paciente ADD CONSTRAINT paciente_uk UNIQUE (cpf);
 ALTER TABLE secretaria ADD CONSTRAINT secretaria_uk UNIQUE (cpf);
 ALTER TABLE supervisor ADD CONSTRAINT supervisor_uk UNIQUE (cpf);
+ALTER TABLE agenda ADD CONSTRAINT agenda_uk UNIQUE (data_agenda,hora);
 --------------------------------------------FOREIGN KEYS------------------------------------------------------
 
 -- SECRETARIA --> (USUARIO) --
