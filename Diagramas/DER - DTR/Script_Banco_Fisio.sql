@@ -125,7 +125,7 @@ estado_civil integer not null,
 sexo boolean,
 ocupacao_atual varchar,
 responsavel varchar,
-isencao boolean not null,
+isencao boolean,
 valor_pago numeric(15,2) default 0, 
 falta integer not null default 0, 
 alta boolean
