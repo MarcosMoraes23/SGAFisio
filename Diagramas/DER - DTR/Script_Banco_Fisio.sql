@@ -41,8 +41,7 @@ bairro varchar(64) not null,
 rua varchar(64) not null,
 cep varchar(10),
 numero integer not null,
-complemento varchar(64) not null,
-
+complemento varchar(64) not null
 );
 
 CREATE TABLE agenda (
@@ -72,8 +71,7 @@ cep varchar(10),
 numero integer not null,
 complemento varchar(64) not null,
 turno_alocado integer,
-periodo integer not null,
-
+periodo integer not null
 );
 
 CREATE TABLE atendimento (
@@ -81,7 +79,6 @@ id bigint not null,
 data_atendimento date not null,
 hora time not null,
 descricao_atendimento text,
-
 id_agenda bigint not null
 );
 
@@ -148,8 +145,7 @@ bairro varchar(64) not null,
 rua varchar(64) not null,
 cep varchar(10),
 numero integer not null,
-complemento varchar(64) not null,
-
+complemento varchar(64) not null
 );
 
 --------------------------------------------PRIMARY KEYS------------------------------------------------------
