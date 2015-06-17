@@ -43,7 +43,6 @@ cep varchar(10),
 numero integer not null,
 complemento varchar(64) not null,
 
-id_usuario bigint not null
 );
 
 CREATE TABLE agenda (
@@ -75,7 +74,6 @@ complemento varchar(64) not null,
 turno_alocado integer,
 periodo integer not null,
 
-id_usuario bigint not null
 );
 
 CREATE TABLE atendimento (
@@ -131,8 +129,8 @@ sexo boolean,
 ocupacao_atual varchar,
 responsavel varchar,
 isencao boolean not null,
-valor_pago numeric(15,2) default 0, --DEVIDO AO RELATÓRIO FINANCEIRO, OS CÁLCULOS PRECISAM ENCONTRAR 0 E NÃO NULL--
-falta integer not null default 0, --DEVIDO AO RELATÓRIO ATENDIMENTO, OS CÁLCULOS PRECISAM ENCONTRAR 0 E NÃO NULL--
+valor_pago numeric(15,2) default 0, 
+falta integer not null default 0, 
 alta boolean
 );
 
@@ -152,7 +150,6 @@ cep varchar(10),
 numero integer not null,
 complemento varchar(64) not null,
 
-id_usuario bigint not null
 );
 
 --------------------------------------------PRIMARY KEYS------------------------------------------------------
@@ -174,17 +171,6 @@ ALTER TABLE secretaria ADD CONSTRAINT secretaria_uk UNIQUE (cpf);
 ALTER TABLE supervisor ADD CONSTRAINT supervisor_uk UNIQUE (cpf);
 ALTER TABLE agenda ADD CONSTRAINT agenda_uk UNIQUE (data_agenda,hora);
 --------------------------------------------FOREIGN KEYS------------------------------------------------------
-
--- SECRETARIA --> (USUARIO) --
-ALTER TABLE secretaria ADD CONSTRAINT secretaria_1_fk FOREIGN KEY(id_usuario) REFERENCES usuario (id); 
-
-
--- SUPERVISOR --> (USUARIO) --
-ALTER TABLE supervisor ADD CONSTRAINT supervisor_1_fk FOREIGN KEY(id_usuario) REFERENCES usuario (id);
-
-
--- ESTAGIARIO --> (USUARIO) --
-ALTER TABLE estagiario ADD CONSTRAINT estagiario_1_fk FOREIGN KEY(id_usuario) REFERENCES usuario (id);
 
 
 -- AGENDA --> (SECRETARIA, ESTAGIARIO, PACIENTE) --
