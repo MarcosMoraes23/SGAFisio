@@ -25,126 +25,103 @@ INSERT INTO "fila_de_espera" (id,data_inclusao,status,id_secretaria,id_paciente)
 INSERT INTO "paciente" (id,nome,data_nascimento,cpf,rg,telefone,estado,cidade,bairro,rua,cep,numero,complemento,etnia,estado_civil,ocupacao_atual,responsavel,valor_pago,falta) 
  VALUES (1,'Ian Bond','2015/06/26','04265890084','8705907840','(80)1431-4673','Dr','Emmen','ON','292-7263 Felis Rd.','5694AH',645,'nulla. Integer',3,4,'Eleifend LLC','Molly','1.05',2),(2,'Ivor Phillips','2014/12/27','44900223631','8311142729','(46)7616-6552','New South Wales','Queanbeyan','DE','Ap #191-6606 Ultrices Av.','40106',801,'sapien. Cras',4,1,'Quis Corporation','Cally','7.73',1),(3,'Quentin Foster','2016/02/25','19268641223','1433534877','(78)6748-0108','AL','Mobile','Quebec','200-288 At Street','77667',513,'Suspendisse aliquet',2,2,'Molestie LLP','Jason','6.57',1),(4,'Darius Simmons','2014/07/17','07692904674','7027252117','(88)5828-8656','Kansas','Kansas City','Jharkhand','8384 Augue, Road','34671',915,'vitae, posuere',1,2,'Et Corporation','Ava','2.69',1),(5,'Armand Mcgowan','2015/07/29','61797423416','2997094478','(40)0162-3650','Vermont','Burlington','ZP','Ap #182-7127 Mauris. Av.','967974',784,'sit amet,',2,2,'Consequat Purus PC','Quinn','0.06',1),(6,'Patience Yates','2014/11/26','43947560152','2881146883','(98)1232-7065','California','San Jose','Principado de Asturias','744-9298 Quam. Av.','47084',800,'aliquam adipiscing',2,1,'Feugiat Lorem LLC','Burke','9.00',3),(7,'Austin Salas','2016/05/20','13281448573','5121700849','(56)7428-8071','JI','Dutse','Oklahoma','Ap #153-9500 Aliquam Avenue','4608',457,'est mauris,',2,4,'Et Pede Institute','April','1.59',1),(8,'Quynn Haney','2015/01/22','36156027652','2611362399','(64)9059-0038','RS','Pelotas','Ontario','Ap #110-2168 In St.','M7H 9Z4',794,'metus eu',2,4,'Massa Institute','Thor','7.48',2),(9,'Damon Webster','2015/10/29','96478920135','8658712574','(24)7869-3031','Konya','Karapınar','MG','P.O. Box 773, 1177 Ipsum Street','41573',539,'Curabitur ut',1,4,'Egestas Nunc Sed Ltd','Declan','2.16',1),(10,'Karen Noble','2016/02/10','75919641252','4923407222','(47)9412-9470','Alberta','Gibbons','Tyrol','Ap #231-6300 Pretium Rd.','2005',462,'arcu et',4,2,'Ipsum Curabitur Consequat Corporation','Jada','0.80',2),(11,'Abraham Cabrera','2016/03/08','54510833966','5975433332','(63)8415-5539','Pembrokeshire','Pembroke','BC','P.O. Box 123, 4300 Lorem, Ave','5484',231,'euismod in,',3,4,'Maecenas Consulting','Prescott','3.31',3),(12,'Kelsie Woodard','2014/11/30','14550796679','1223819506','(32)0309-2102','Noord Brabant','Helmond','NI','4038 Duis Street','75652',397,'sit amet',2,2,'Commodo Tincidunt Incorporated','Colorado','9.91',3),(13,'Sandra Hendricks','2015/05/12','54206710260','5731878425','(40)3704-2006','South Australia','Victor Harbor','New South Wales','Ap #954-945 Fusce Street','C5C 8M5',893,'augue id',3,1,'In Molestie Consulting','Tashya','4.59',3),(14,'Hammett Nichols','2015/12/17','62073489626','2742903430','(85)0154-3332','New South Wales','Dubbo','AB','1292 Quisque Ave','66700',262,'vestibulum lorem,',4,4,'Convallis Ligula Corp.','Jordan','0.94',3),(15,'Oscar Harris','2014/11/15','52199912096','5926945497','(56)9375-0675','Manitoba','Brandon','Mazowieckie','607-3853 Turpis. Rd.','31819',682,'mauris sit',3,3,'Felis Donec LLC','Shelley','6.47',2),(16,'Macaulay Parsons','2015/11/12','49586472689','7613408192','(48)7569-1590','JI','Dutse','PR','P.O. Box 123, 314 Donec Avenue','9634GI',730,'quam, elementum',3,1,'Tristique Neque Venenatis Inc.','Jelani','6.44',3),(17,'Michael Weber','2016/05/22','64953958723','4492758817','(66)7791-6220','Ist','Istanbul','MU','8689 Velit Avenue','L5L 2J8',584,'id, erat.',4,1,'Iaculis Aliquet Institute','Chandler','2.87',2),(18,'Ralph Frye','2016/01/24','72260084879','0581712350','(74)1981-6391','VT','South Burlington','Western Australia','4997 Quam. Rd.','4562',483,'ut, nulla.',2,2,'Semper Et Lacinia Institute','Ahmed','6.96',1),(19,'Aileen George','2015/12/09','57216057096','6010213998','(78)1249-5875','AB','Calmar','KN','586-8210 Felis Av.','35857',648,'odio. Nam',3,4,'Etiam Industries','Carissa','8.04',2),(20,'Alan Cleveland','2015/02/17','83731153257','4701710672','(50)4557-3111','São Paulo','Ribeirão Preto','Vlaams-Brabant','P.O. Box 199, 7278 Mattis. Ave','09-355',241,'rutrum lorem',1,4,'Aliquam Erat Associates','Maite','2.86',2),(21,'Ocean Johnson','2016/02/11','89065447475','7252112830','(51)0896-2020','Cornwall','St. Austell','Mer','Ap #102-5701 Nunc Road','79352',496,'non enim',1,4,'Erat Etiam Company','Denise','3.16',2),(22,'Beatrice Kaufman','2015/06/15','89068270086','8497613923','(47)9769-3835','South Australia','Whyalla','Noord Holland','6763 Eget Street','70341',956,'pretium neque.',4,2,'Sed Associates','Dakota','3.35',3),(23,'Baxter Dillon','2016/01/28','82233147877','3543863160','(24)8049-7146','Lubuskie','Zielona Góra','Lombardia','Ap #465-7578 Gravida Rd.','1954',993,'augue ut',2,3,'Pharetra Incorporated','Colt','0.23',1),(24,'Delilah Keith','2016/03/26','90733386068','9816840951','(03)7165-1359','ZP','Szczecin','AS','P.O. Box 367, 4454 Mi Road','33493-537',326,'Proin velit.',2,2,'Dui Suspendisse Ac Limited','Rama','9.09',3),(25,'Ginger Newton','2015/06/18','89420929471','9828033930','(34)9175-5143','PIE','Cuceglio','Zachodniopomorskie','Ap #154-6741 Et Street','90943',780,'auctor quis,',1,4,'Massa Quisque Porttitor Incorporated','Regina','4.21',1),(26,'Cara Leon','2015/08/19','21697602604','6046250697','(70)0374-6822','Ank','Şereflikoçhisar','HB','Ap #460-2599 Ut, Ave','58347',255,'orci sem',1,4,'Rutrum Non Corporation','Brielle','5.59',2),(27,'Fatima Ward','2015/06/27','28584982387','7001859917','(52)1263-8445','Upper Austria','Leonding','São Paulo','941-2146 Tellus Rd.','39770-957',391,'risus varius',2,4,'Fringilla Euismod Ltd','Leonard','8.79',3),(28,'Emmanuel Manning','2015/10/31','74810326346','7116550418','(55)1130-7051','British Columbia','Maple Ridge','A','P.O. Box 627, 4794 Eget Av.','89840',561,'egestas. Sed',1,2,'Purus LLC','Malcolm','8.88',3),(29,'Abraham Waller','2015/07/31','07435981974','2065025427','(32)0991-6555','NI','Upper Hutt','FL','P.O. Box 417, 4073 Sem Street','06832-046',917,'mauris sapien,',3,4,'Feugiat Placerat Incorporated','Chastity','4.55',1),(30,'Dora Brennan','2015/08/10','37021018211','1405088385','(65)9676-8645','CA','Mataró','GO','710-2846 A Av.','2656',506,'euismod urna.',2,1,'Id Blandit At Inc.','Charissa','1.00',3),(31,'Theodore Terry','2015/03/26','44461837479','2464364756','(42)9197-4485','WB','Saint-Remy-Geest','PE','Ap #591-7453 Pede. Rd.','8964',407,'dictum eu,',2,1,'Cras Interdum Nunc LLC','Linus','7.81',3),(32,'Travis Pope','2016/01/25','51710060410','3440860651','(62)2558-3617','Rhineland-Palatinate','Speyer','Ist','Ap #722-748 Curabitur Street','J9E 9T4',307,'vulputate, nisi',1,3,'Vitae Risus Duis Institute','Erin','7.61',2),(33,'Mallory Mays','2014/07/04','40346265022','0932952200','(64)4691-2686','Bursa','İnegöl','CAL','839-9940 Eu, Road','857895',107,'quam. Pellentesque',1,2,'Sed Foundation','Quail','9.48',1),(34,'Xantha Moss','2014/12/11','36609263686','7462737072','(24)2429-6840','Canarias','Santa Cruz de Tenerife','Karnataka','946-9943 Libero. Rd.','8723',552,'porttitor scelerisque',1,1,'Tincidunt Associates','Chelsea','2.65',3),(35,'Nevada Flowers','2016/05/18','41786850991','5435685362','(56)0255-5935','QC','Shawville','Ov','651-8482 Felis. Rd.','4225',278,'molestie orci',3,1,'Morbi Incorporated','Madeson','4.79',1),(36,'Mary Tyson','2014/08/24','03561965916','2243618045','(76)1245-2616','QC','Dorval','Australian Capital Territory','Ap #388-9973 Aliquam Avenue','4700',498,'Aliquam erat',2,3,'Scelerisque Scelerisque Incorporated','Neville','6.30',2),(37,'Martha Mccarthy','2014/10/10','78242664090','1949263388','(06)3162-3025','Istanbul','Istanbul','Zeeland','P.O. Box 528, 5051 Luctus Rd.','02025',834,'metus. In',3,1,'Rutrum PC','Mannix','6.07',1),(38,'Aimee Ayers','2014/08/27','88302967891','4086567109','(28)0966-5922','LD','Tomaszów Mazowiecki','VIC','P.O. Box 124, 8169 Eleifend Rd.','711957',529,'Curae; Donec',1,4,'Penatibus Incorporated','Sybil','5.97',3),(39,'Lisandra Hudson','2015/04/14','34978468217','6461279001','(29)2883-3766','New South Wales','Penrith','Tennessee','850-4576 Ut Ave','98219',535,'sociis natoque',2,4,'Tempus Non Corp.','September','1.55',1),(40,'Brett Burgess','2014/12/04','70747089548','6378492939','(81)3955-6772','Z.','Alphen aan den Rijn','Dolnośląskie','404-1656 Risus. St.','9482',222,'risus varius',3,2,'Non Enim Mauris Industries','Harper','1.90',2),(41,'Kimberly Booth','2016/03/20','11821554941','4922761306','(24)7437-6227','Mazowieckie','Warszawa','MI','Ap #726-8368 Accumsan Road','16337',653,'nec quam.',4,1,'Est Vitae Institute','Lesley','9.22',1),(42,'Quemby Morse','2015/01/01','77590994910','9095014832','(86)3470-1016','Ist','Istanbul','DS','Ap #835-3080 Morbi Ave','8646',368,'Proin vel',4,4,'Elit PC','Adara','2.60',3),(43,'Hilel Lewis','2016/03/10','11898582254','5711622049','(68)4779-9430','Wie','Vienna','PA','P.O. Box 966, 7389 Nascetur Rd.','4285',909,'fringilla. Donec',1,2,'Vitae Sodales Company','Elliott','5.74',2),(44,'Fritz House','2015/08/21','40116052440','1997039466','(23)7084-9670','Minas Gerais','Uberaba','Montana','P.O. Box 553, 4678 Praesent St.','20-503',450,'ac mattis',4,3,'Nibh Associates','Nicholas','2.37',1),(45,'Gillian Santiago','2015/03/31','51544004669','8541278175','(89)5443-2020','Limburg','Maaseik','QLD','Ap #623-2222 Blandit St.','03677',813,'Proin eget',3,3,'Id Libero Foundation','Jena','4.95',3),(46,'Blaine Atkinson','2015/12/10','53352020999','7425245467','(65)7672-9747','Wiltshire','Trowbridge','Toscana','8211 Vivamus Rd.','33838',323,'Ut tincidunt',3,2,'Malesuada Ut Sem Corporation','Yvonne','6.02',2),(47,'Perry Shelton','2016/01/31','86397359223','1620554069','(74)6757-4797','Puntarenas','Puntarenas','Munster','P.O. Box 437, 2505 Auctor Av.','Y2G 0E0',170,'Ut tincidunt',2,2,'Donec Porttitor Corporation','Beatrice','8.06',2),(48,'Berk Frazier','2016/06/04','82286346798','3556540767','(47)4899-2602','ID','Boise','SO','P.O. Box 488, 7205 Egestas Rd.','24541',959,'ipsum. Suspendisse',3,2,'Ornare Institute','Adria','6.63',3),(49,'Hector Ortiz','2014/06/21','25287806949','0238307782','(77)0750-0040','Bauchi','Bauchi','WA','Ap #284-1090 Arcu St.','47-875',701,'habitant morbi',2,1,'Mauris Id Sapien Limited','Dominique','0.79',3),(50,'Sybil Burton','2015/06/04','25601606246','6826028495','(30)7506-2982','ME','Augusta','Madhya Pradesh','P.O. Box 831, 8559 Iaculis Rd.','J3Q 1JK',586,'eu, odio.',1,4,'Et Magnis Consulting','Frances','1.07',1),(51,'Carly Murphy','2015/11/30','41195906290','1050084418','(87)6736-8257','RO','Stornaway','Alabama','576-9557 Vel Street','9472',594,'aptent taciti',2,3,'Eget Ipsum Consulting','Ebony','0.18',3),(52,'Zenaida Mason','2016/03/02','13504027565','6237448672','(79)9235-5589','Centre','Bourges','CA','Ap #243-3253 Nam St.','8696',713,'Phasellus dolor',1,1,'Ligula Donec Inc.','Alan','2.92',3),(53,'Haviva Melton','2014/08/04','45408793887','7221351300','(42)2109-9092','U','Belfast','Île-de-France','330-6822 Tempor Avenue','2176',190,'tristique senectus',3,4,'Ultricies Ornare Industries','Amos','8.06',3),(54,'Madeson Osborn','2016/04/15','59293651193','7372780106','(16)1081-2466','Connecticut','New Haven','Kentucky','2091 Nullam Rd.','42-759',324,'Donec tincidunt.',4,3,'Auctor Odio PC','Raja','1.93',3),(55,'Grace Beard','2015/07/02','13898245137','0282781499','(98)2787-7548','KY','Covington','West-Vlaanderen','6344 Malesuada Street','9322',376,'et, eros.',4,1,'Urna Nullam Lobortis Limited','Shafira','4.34',3),(56,'Boris Snow','2015/05/10','26614114331','3726079578','(77)4018-8098','North Island','Waiuku','Noord Holland','785 Lacus. Avenue','5803',166,'sem semper',3,4,'Amet Ltd','Keely','9.94',1),(57,'Reed Kelly','2014/07/01','37436558026','1420607090','(54)4173-7668','WB','Kolkata','Emilia-Romagna','Ap #104-2127 Et Rd.','94630',162,'non dui',1,3,'Non Massa Non LLC','Hannah','9.60',2),(58,'Yardley Briggs','2015/04/24','67961137281','5499473209','(72)0903-6882','Castilla y León','Zamora','Castilla y León','Ap #694-2160 Faucibus Ave','39843',916,'non, hendrerit',4,4,'Elit LLP','Deacon','7.15',2),(59,'Nicholas Carpenter','2015/06/01','67147473083','7959329144','(43)3993-8496','North Island','Napier','İzmir','8554 Euismod Street','41611',276,'lobortis tellus',3,1,'Maecenas PC','Blair','9.10',1),(60,'Hoyt Kidd','2014/12/06','19633816015','5202448711','(40)9861-7969','ON','St. Catharines','Adana','275-6548 Et St.','7057',181,'non, luctus',4,2,'Erat Vivamus Industries','Audrey','4.12',1),(61,'Chester Cantrell','2016/04/12','00209807663','5354795006','(33)6064-5723','N.','Oosterhout','Andalucía','P.O. Box 806, 6921 Quis Av.','48449',689,'feugiat placerat',4,1,'Tincidunt Limited','Jada','4.79',3),(62,'Moana Richards','2015/02/19','55051154339','2016847000','(08)3413-8223','Niger','Minna','Tasmania','8972 Sed St.','721475',576,'interdum enim',4,4,'Bibendum Sed Est Corp.','Nevada','6.80',3),(63,'Wynter Mcknight','2015/04/01','43577686262','4431674755','(62)4845-4644','British Columbia','White Rock','İz','3310 Ut Avenue','3360',974,'ultricies dignissim',2,3,'Neque Vitae Inc.','Phoebe','9.63',1),(64,'Clio Gregory','2014/11/09','85249907186','4333697699','(24)6835-5543','Şanlıurfa','Birecik','Nevada','P.O. Box 167, 3881 At, St.','70170',687,'orci. Donec',1,4,'Mauris Company','Isabelle','8.76',1),(65,'Desiree Gates','2015/06/12','08815144165','1975396130','(54)9596-0772','North Island','Upper Hutt','LD','5879 Vehicula Road','76709',255,'sociis natoque',2,3,'Ultrices Sit Amet Institute','Drew','2.26',1),(66,'Britanni Bowers','2015/03/28','05577602481','8684061071','(58)2240-9403','BR','Munger','SJ','950-8902 Pellentesque. Road','8956',176,'Morbi neque',1,3,'Enim LLC','Echo','5.43',1),(67,'Mannix Merrill','2014/12/21','45326103004','3517464056','(73)3075-2821','KN','Kano','Katsina','963-6347 Sed Rd.','8767',580,'tortor. Nunc',1,4,'Nisi Corporation','Bryar','2.12',2),(68,'Mikayla Wilcox','2015/01/29','54028982657','2071459036','(91)1301-4902','Vienna','Vienna','IL','P.O. Box 571, 9885 Vivamus Rd.','47852',565,'mattis velit',4,2,'Iaculis Inc.','Whitney','4.87',2),(69,'Sophia Baxter','2016/04/26','69291109734','9167004920','(32)6121-6162','South Australia','Murray Bridge','Dunbartonshire','1908 Egestas. Ave','M4J 0E9',865,'sollicitudin orci',3,4,'Praesent Corporation','Meredith','1.99',3),(70,'McKenzie Mathis','2014/06/25','90182498876','5518249699','(26)1277-8877','Istanbul','Istanbul','BC','106-2791 Primis St.','55414',598,'viverra. Donec',4,4,'Sed Associates','Len','0.57',2),(71,'Nasim Meyer','2015/07/08','58157588804','7426026717','(83)3763-5680','Alberta','Calmar','Wie','P.O. Box 713, 7119 Pede Street','81870',722,'orci luctus',3,2,'Natoque Penatibus Et Company','Dean','3.57',2),(72,'Noel Mcpherson','2016/03/12','00687779714','9416840871','(10)9290-1467','Vienna','Vienna','Ontario','9383 Tempus, Ave','86628',908,'Cras convallis',3,4,'Ornare Placerat Orci Corporation','Joel','3.31',1),(73,'Ivana Booth','2015/03/05','40610247956','3346444751','(16)4163-6767','Pará','Cametá','Kocaeli','400-4776 Mattis Avenue','9959GH',133,'molestie in,',2,4,'Elit Ltd','Sheila','2.42',1),(74,'Bevis Noel','2015/11/12','07456228738','8557623882','(22)9699-3725','HH','Hamburg','MA','8759 Nibh Rd.','6606',612,'Vivamus rhoncus.',3,3,'Mauris Id Sapien LLP','Herman','3.96',1),(75,'Deborah Goodwin','2016/05/30','65051157689','7865632778','(25)9303-3993','Wie','Vienna','Leinster','7490 Lorem, Avenue','30436',458,'non, egestas',1,2,'Varius Corp.','Amal','8.46',1),(76,'Paki Gardner','2015/09/29','29195382962','6474827266','(23)9352-7508','ERM','Luzzara','Nord-Pas-de-Calais','6061 Consectetuer Rd.','62195-927',617,'non, hendrerit',2,1,'Leo Ltd','Quamar','3.68',1),(77,'Idona Armstrong','2015/11/22','62256652588','2960300079','(35)9329-2320','Zuid Holland','Rotterdam','L','6228 Id, St.','0944HJ',398,'Fusce feugiat.',1,3,'Tempus Risus Associates','Dieter','1.75',2),(78,'Piper Mullins','2016/01/05','20538621001','0484281436','(85)8231-2289','RJ','Tonk','NO','Ap #290-4097 Lobortis, Road','91-429',492,'Integer vitae',3,1,'Aliquam LLP','Vielka','0.78',1),(79,'Bethany Franco','2015/01/28','85622621605','2283666556','(38)2319-3330','North Island','Kapiti','LB','7131 At, St.','60-161',343,'Cras eu',4,3,'Lobortis LLP','Lawrence','1.79',3),(80,'Rana Morgan','2015/02/27','29512857997','5599938955','(25)7114-5569','Mersin','Anamur','DN','5021 Molestie Rd.','768653',385,'fermentum fermentum',1,1,'Elit Corporation','Ciaran','8.03',1),(81,'Colette Murray','2014/09/19','93374553761','5614492901','(12)3260-3804','ME','Auburn','New South Wales','7193 Natoque St.','81670',357,'amet metus.',2,3,'Magna Ut Tincidunt Consulting','Katelyn','5.47',3),(82,'Gannon Patton','2015/11/06','41793617061','4128754243','(66)6886-2324','Namen','Tamines','MP','Ap #643-6580 Luctus Street','51204',674,'ullamcorper, velit',2,4,'Augue Scelerisque Mollis Inc.','Dale','7.34',1),(83,'Martena Ferguson','2015/05/02','18795618504','8352707858','(99)0030-1311','São Paulo','Mogi das Cruzes','North Island','Ap #647-4789 Suspendisse St.','XL70 0OU',792,'tempor augue',3,1,'Eget Consulting','Judith','6.53',3),(84,'Martha Dodson','2015/05/01','98177898402','2068119361','(84)8459-5175','Santa Catarina','Itajaí','Oost-Vlaanderen','5866 Et Ave','53080',710,'aliquet. Phasellus',1,3,'Non Sollicitudin LLC','Wyatt','2.84',2),(85,'Kyra Lindsey','2015/07/23','38532046462','3703431856','(68)1187-3046','São Paulo','Piracicaba','San José','Ap #264-9101 Faucibus Avenue','YO4 6MM',589,'vestibulum lorem,',1,3,'Eget Corporation','Merrill','7.13',3),(86,'Sasha Ward','2015/01/03','17451297551','3126501223','(79)1537-9498','Luik','Poulseur','ZP','6560 Et Road','62640',101,'Class aptent',4,1,'Lectus Rutrum Urna PC','Lane','7.26',1),(87,'Caldwell Olsen','2016/05/23','91630500841','1740664135','(21)3808-1264','Berlin','Berlin','Ontario','479-9705 Sit Rd.','51801',123,'velit. Pellentesque',2,4,'Mollis LLC','Preston','0.01',2),(88,'Quinn Whitney','2015/01/10','49395416407','8642773574','(75)8512-4823','Konya','Karapınar','North Island','499-9649 Vulputate St.','5899',369,'lacus. Nulla',3,1,'Gravida Molestie Arcu Company','Isabella','6.40',1),(89,'Ori Fuller','2015/04/27','99780305125','5581951741','(05)7345-3275','South Island','Westport','Koc','Ap #261-7608 Nam Street','69-226',132,'a mi',2,1,'Risus Morbi Foundation','Clayton','7.72',2),(90,'Scott Hicks','2015/07/24','24476432524','6291721032','(57)2659-0283','KA','Raichur','N.','350-4611 Vehicula Street','324509',618,'consequat nec,',1,1,'Id Nunc Limited','Unity','8.25',2),(91,'Erica Cox','2015/12/21','30745676344','6090254000','(09)3451-2153','OÖ','Bad Ischl','Vermont','Ap #518-6674 Feugiat. Ave','99608',524,'sem magna',3,2,'Felis Donec Corp.','Abdul','2.79',2),(92,'Keaton Ayers','2015/10/21','09849577432','1873915964','(09)9768-2146','SA','Mount Gambier','BW','Ap #127-917 Mauris Street','5715',666,'ante ipsum',3,4,'Eu Dolor Industries','Vivian','1.46',2),(93,'Ulla Shepard','2016/06/02','25110985353','7468828383','(52)1113-8066','PI','Creil','MP','Ap #434-6656 Rutrum Road','97616-487',807,'bibendum fermentum',3,2,'Metus In Lorem Consulting','Branden','5.95',3),(94,'Berk Garza','2015/01/29','35373583645','5153012492','(57)0162-6971','Kano','Kano','São Paulo','2351 Orci, Road','4201',194,'eu, odio.',2,1,'Sed Nec Associates','Geoffrey','5.21',1),(95,'Vance Solis','2015/04/12','62615067717','7982770488','(56)0361-9741','Connecticut','New Haven','OG','P.O. Box 925, 5035 Ante. Road','02654',286,'lectus. Nullam',1,3,'Nullam Scelerisque Ltd','Xyla','6.90',3),(96,'Zena Soto','2016/04/04','87561409219','2810038050','(81)8035-9816','ON','East Gwillimbury','Quebec','203-1355 Netus Av.','73136-969',825,'elit, dictum',1,3,'Donec Dignissim Company','Penelope','9.89',3),(97,'Zachery Newman','2014/09/02','32606179416','0955171365','(03)5096-6549','Delta','Warri','PB','4595 Consequat Road','6374',370,'dui nec',1,4,'Fringilla Ltd','Yolanda','0.75',2),(98,'Ignatius Joyner','2016/04/01','56513275988','6676399675','(24)8676-2351','DS','Wałbrzych','Madrid','P.O. Box 708, 3685 Nam St.','50225',242,'felis ullamcorper',4,4,'Duis At Consulting','Melanie','8.44',2),(99,'Aphrodite Duran','2014/11/21','62090623609','6650835442','(95)3230-6441','C','Tejar','Louisiana','P.O. Box 939, 5312 Rhoncus Ave','4737QG',411,'Donec at',2,1,'Magna Associates','Stacey','3.49',3),(100,'Rosalyn Curtis','2015/06/27','15954611819','8723353781','(56)0550-1680','CE','Sobral','HH','P.O. Box 354, 2194 Eleifend, Road','30513',573,'viverra. Donec',1,3,'Rhoncus Industries','Larissa','3.01',1);
 
-UPDATE "paciente" SET sexo = true ,isencao = false,alta = true WHERE id=1
-UPDATE "paciente" SET sexo = false ,isencao = false,alta = true WHERE id=2
-UPDATE "paciente" SET sexo = true ,isencao = true,alta = true WHERE id=3
-UPDATE "paciente" SET sexo = true ,isencao = false,alta = true WHERE id=4
-UPDATE "paciente" SET sexo = false ,isencao = false,alta = false WHERE id=5
-UPDATE "paciente" SET sexo = true ,isencao = false,alta = false WHERE id=6
-UPDATE "paciente" SET sexo = true ,isencao = false,alta = true WHERE id=7
-UPDATE "paciente" SET sexo = false ,isencao = false,alta = true WHERE id=8
-UPDATE "paciente" SET sexo = true ,isencao = true,alta = true WHERE id=9
-UPDATE "paciente" SET sexo = true ,isencao = false,alta = true WHERE id=10
-UPDATE "paciente" SET sexo = false ,isencao = false,alta = false WHERE id=11
-UPDATE "paciente" SET sexo = true ,isencao = false,alta = false WHERE id=12
-UPDATE "paciente" SET sexo = true ,isencao = false,alta = true WHERE id=13
-UPDATE "paciente" SET sexo = false ,isencao = false,alta = true WHERE id=14
-UPDATE "paciente" SET sexo = true ,isencao = true,alta = true WHERE id=15
-UPDATE "paciente" SET sexo = true ,isencao = false,alta = true WHERE id=16
-UPDATE "paciente" SET sexo = false ,isencao = false,alta = false WHERE id=17
-UPDATE "paciente" SET sexo = true ,isencao = false,alta = false WHERE id=18
-UPDATE "paciente" SET sexo = true ,isencao = false,alta = true WHERE id=19
-UPDATE "paciente" SET sexo = false ,isencao = false,alta = true WHERE id=20
-UPDATE "paciente" SET sexo = true ,isencao = true,alta = true WHERE id=21
-UPDATE "paciente" SET sexo = true ,isencao = false,alta = true WHERE id=22
-UPDATE "paciente" SET sexo = false ,isencao = false,alta = false WHERE id=23
-UPDATE "paciente" SET sexo = true ,isencao = false,alta = false WHERE id=24
-UPDATE "paciente" SET sexo = true ,isencao = false,alta = true WHERE id=25
-UPDATE "paciente" SET sexo = false ,isencao = false,alta = true WHERE id=26
-UPDATE "paciente" SET sexo = true ,isencao = true,alta = true WHERE id=27
-UPDATE "paciente" SET sexo = true ,isencao = false,alta = true WHERE id=28
-UPDATE "paciente" SET sexo = false ,isencao = false,alta = false WHERE id=29
-UPDATE "paciente" SET sexo = true ,isencao = false,alta = false WHERE id=30
-UPDATE "paciente" SET sexo = true ,isencao = false,alta = true WHERE id=31
-UPDATE "paciente" SET sexo = false ,isencao = false,alta = true WHERE id=32
-UPDATE "paciente" SET sexo = true ,isencao = true,alta = true WHERE id=33
-UPDATE "paciente" SET sexo = true ,isencao = false,alta = true WHERE id=34
-UPDATE "paciente" SET sexo = false ,isencao = false,alta = false WHERE id=35
-UPDATE "paciente" SET sexo = true ,isencao = false,alta = false WHERE id=36
-UPDATE "paciente" SET sexo = true ,isencao = false,alta = true WHERE id=37
-UPDATE "paciente" SET sexo = false ,isencao = false,alta = true WHERE id=38
-UPDATE "paciente" SET sexo = true ,isencao = true,alta = true WHERE id=39
-UPDATE "paciente" SET sexo = true ,isencao = false,alta = true WHERE id=40
-UPDATE "paciente" SET sexo = false ,isencao = false,alta = false WHERE id=41
-UPDATE "paciente" SET sexo = true ,isencao = false,alta = false WHERE id=42
-UPDATE "paciente" SET sexo = true ,isencao = false,alta = true WHERE id=43
-UPDATE "paciente" SET sexo = false ,isencao = false,alta = true WHERE id=44
-UPDATE "paciente" SET sexo = true ,isencao = true,alta = true WHERE id=45
-UPDATE "paciente" SET sexo = true ,isencao = false,alta = true WHERE id=46
-UPDATE "paciente" SET sexo = false ,isencao = false,alta = false WHERE id=47
-UPDATE "paciente" SET sexo = true ,isencao = false,alta = false WHERE id=48
-UPDATE "paciente" SET sexo = true ,isencao = false,alta = true WHERE id=49
-UPDATE "paciente" SET sexo = false ,isencao = false,alta = true WHERE id=50
-UPDATE "paciente" SET sexo = true ,isencao = true,alta = true WHERE id=51
-UPDATE "paciente" SET sexo = true ,isencao = false,alta = true WHERE id=52
-UPDATE "paciente" SET sexo = false ,isencao = false,alta = false WHERE id=53
-UPDATE "paciente" SET sexo = true ,isencao = false,alta = false WHERE id=54
-UPDATE "paciente" SET sexo = true ,isencao = false,alta = true WHERE id=55
-UPDATE "paciente" SET sexo = false ,isencao = false,alta = true WHERE id=56
-UPDATE "paciente" SET sexo = true ,isencao = true,alta = true WHERE id=57
-UPDATE "paciente" SET sexo = true ,isencao = false,alta = true WHERE id=58
-UPDATE "paciente" SET sexo = false ,isencao = false,alta = false WHERE id=59
-UPDATE "paciente" SET sexo = true ,isencao = false,alta = false WHERE id=60
-UPDATE "paciente" SET sexo = true ,isencao = false,alta = true WHERE id=61
-UPDATE "paciente" SET sexo = false ,isencao = false,alta = true WHERE id=62
-UPDATE "paciente" SET sexo = true ,isencao = true,alta = true WHERE id=63
-UPDATE "paciente" SET sexo = true ,isencao = false,alta = true WHERE id=64
-UPDATE "paciente" SET sexo = false ,isencao = false,alta = false WHERE id=65
-UPDATE "paciente" SET sexo = true ,isencao = false,alta = false WHERE id=66
-UPDATE "paciente" SET sexo = true ,isencao = false,alta = true WHERE id=67
-UPDATE "paciente" SET sexo = false ,isencao = false,alta = true WHERE id=68
-UPDATE "paciente" SET sexo = true ,isencao = true,alta = true WHERE id=69
-UPDATE "paciente" SET sexo = true ,isencao = false,alta = true WHERE id=70
-UPDATE "paciente" SET sexo = false ,isencao = false,alta = false WHERE id=71
-UPDATE "paciente" SET sexo = true ,isencao = false,alta = false WHERE id=72
-UPDATE "paciente" SET sexo = true ,isencao = false,alta = true WHERE id=73
-UPDATE "paciente" SET sexo = false ,isencao = false,alta = true WHERE id=74
-UPDATE "paciente" SET sexo = true ,isencao = true,alta = true WHERE id=75
-UPDATE "paciente" SET sexo = true ,isencao = false,alta = true WHERE id=76
-UPDATE "paciente" SET sexo = false ,isencao = false,alta = false WHERE id=77
-UPDATE "paciente" SET sexo = true ,isencao = false,alta = false WHERE id=78
-UPDATE "paciente" SET sexo = true ,isencao = false,alta = true WHERE id=79
-UPDATE "paciente" SET sexo = false ,isencao = false,alta = true WHERE id=80
-UPDATE "paciente" SET sexo = true ,isencao = true,alta = true WHERE id=81
-UPDATE "paciente" SET sexo = true ,isencao = false,alta = true WHERE id=82
-UPDATE "paciente" SET sexo = false ,isencao = false,alta = false WHERE id=83
-UPDATE "paciente" SET sexo = true ,isencao = false,alta = false WHERE id=84
-UPDATE "paciente" SET sexo = true ,isencao = false,alta = true WHERE id=85
-UPDATE "paciente" SET sexo = false ,isencao = false,alta = true WHERE id=86
-UPDATE "paciente" SET sexo = true ,isencao = true,alta = true WHERE id=87
-UPDATE "paciente" SET sexo = true ,isencao = false,alta = true WHERE id=88
-UPDATE "paciente" SET sexo = false ,isencao = false,alta = false WHERE id=89
-UPDATE "paciente" SET sexo = true ,isencao = false,alta = false WHERE id=90
-UPDATE "paciente" SET sexo = true ,isencao = false,alta = true WHERE id=91
-UPDATE "paciente" SET sexo = false ,isencao = false,alta = true WHERE id=92
-UPDATE "paciente" SET sexo = true ,isencao = true,alta = true WHERE id=93
-UPDATE "paciente" SET sexo = true ,isencao = false,alta = true WHERE id=94
-UPDATE "paciente" SET sexo = false ,isencao = false,alta = false WHERE id=95
-UPDATE "paciente" SET sexo = true ,isencao = false,alta = false WHERE id=96
-UPDATE "paciente" SET sexo = true ,isencao = false,alta = true WHERE id=97
-UPDATE "paciente" SET sexo = false ,isencao = false,alta = true WHERE id=98
-UPDATE "paciente" SET sexo = true ,isencao = true,alta = true WHERE id=99
-UPDATE "paciente" SET sexo = true ,isencao = false,alta = true WHERE id=100
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+UPDATE "paciente" SET sexo = true ,isencao = false,alta = true WHERE id=1;
+UPDATE "paciente" SET sexo = false ,isencao = false,alta = true WHERE id=2;
+UPDATE "paciente" SET sexo = true ,isencao = true,alta = true WHERE id=3;
+UPDATE "paciente" SET sexo = true ,isencao = false,alta = true WHERE id=4;
+UPDATE "paciente" SET sexo = false ,isencao = false,alta = false WHERE id=5;
+UPDATE "paciente" SET sexo = true ,isencao = false,alta = false WHERE id=6;
+UPDATE "paciente" SET sexo = true ,isencao = false,alta = true WHERE id=7;
+UPDATE "paciente" SET sexo = false ,isencao = false,alta = true WHERE id=8;
+UPDATE "paciente" SET sexo = true ,isencao = true,alta = true WHERE id=9;
+UPDATE "paciente" SET sexo = true ,isencao = false,alta = true WHERE id=10;
+UPDATE "paciente" SET sexo = false ,isencao = false,alta = false WHERE id=11;
+UPDATE "paciente" SET sexo = true ,isencao = false,alta = false WHERE id=12;
+UPDATE "paciente" SET sexo = true ,isencao = false,alta = true WHERE id=13;
+UPDATE "paciente" SET sexo = false ,isencao = false,alta = true WHERE id=14;
+UPDATE "paciente" SET sexo = true ,isencao = true,alta = true WHERE id=15;
+UPDATE "paciente" SET sexo = true ,isencao = false,alta = true WHERE id=16;
+UPDATE "paciente" SET sexo = false ,isencao = false,alta = false WHERE id=17;
+UPDATE "paciente" SET sexo = true ,isencao = false,alta = false WHERE id=18;
+UPDATE "paciente" SET sexo = true ,isencao = false,alta = true WHERE id=19;
+UPDATE "paciente" SET sexo = false ,isencao = false,alta = true WHERE id=20;
+UPDATE "paciente" SET sexo = true ,isencao = true,alta = true WHERE id=21;
+UPDATE "paciente" SET sexo = true ,isencao = false,alta = true WHERE id=22;
+UPDATE "paciente" SET sexo = false ,isencao = false,alta = false WHERE id=23;
+UPDATE "paciente" SET sexo = true ,isencao = false,alta = false WHERE id=24;
+UPDATE "paciente" SET sexo = true ,isencao = false,alta = true WHERE id=25;
+UPDATE "paciente" SET sexo = false ,isencao = false,alta = true WHERE id=26;
+UPDATE "paciente" SET sexo = true ,isencao = true,alta = true WHERE id=27;
+UPDATE "paciente" SET sexo = true ,isencao = false,alta = true WHERE id=28;
+UPDATE "paciente" SET sexo = false ,isencao = false,alta = false WHERE id=29;
+UPDATE "paciente" SET sexo = true ,isencao = false,alta = false WHERE id=30;
+UPDATE "paciente" SET sexo = true ,isencao = false,alta = true WHERE id=31;
+UPDATE "paciente" SET sexo = false ,isencao = false,alta = true WHERE id=32;
+UPDATE "paciente" SET sexo = true ,isencao = true,alta = true WHERE id=33;
+UPDATE "paciente" SET sexo = true ,isencao = false,alta = true WHERE id=34;
+UPDATE "paciente" SET sexo = false ,isencao = false,alta = false WHERE id=35;
+UPDATE "paciente" SET sexo = true ,isencao = false,alta = false WHERE id=36;
+UPDATE "paciente" SET sexo = true ,isencao = false,alta = true WHERE id=37;
+UPDATE "paciente" SET sexo = false ,isencao = false,alta = true WHERE id=38;
+UPDATE "paciente" SET sexo = true ,isencao = true,alta = true WHERE id=39;
+UPDATE "paciente" SET sexo = true ,isencao = false,alta = true WHERE id=40;
+UPDATE "paciente" SET sexo = false ,isencao = false,alta = false WHERE id=41;
+UPDATE "paciente" SET sexo = true ,isencao = false,alta = false WHERE id=42;
+UPDATE "paciente" SET sexo = true ,isencao = false,alta = true WHERE id=43;
+UPDATE "paciente" SET sexo = false ,isencao = false,alta = true WHERE id=44;
+UPDATE "paciente" SET sexo = true ,isencao = true,alta = true WHERE id=45;
+UPDATE "paciente" SET sexo = true ,isencao = false,alta = true WHERE id=46;
+UPDATE "paciente" SET sexo = false ,isencao = false,alta = false WHERE id=47;
+UPDATE "paciente" SET sexo = true ,isencao = false,alta = false WHERE id=48;
+UPDATE "paciente" SET sexo = true ,isencao = false,alta = true WHERE id=49;
+UPDATE "paciente" SET sexo = false ,isencao = false,alta = true WHERE id=50;
+UPDATE "paciente" SET sexo = true ,isencao = true,alta = true WHERE id=51;
+UPDATE "paciente" SET sexo = true ,isencao = false,alta = true WHERE id=52;
+UPDATE "paciente" SET sexo = false ,isencao = false,alta = false WHERE id=53;
+UPDATE "paciente" SET sexo = true ,isencao = false,alta = false WHERE id=54;
+UPDATE "paciente" SET sexo = true ,isencao = false,alta = true WHERE id=55;
+UPDATE "paciente" SET sexo = false ,isencao = false,alta = true WHERE id=56;
+UPDATE "paciente" SET sexo = true ,isencao = true,alta = true WHERE id=57;
+UPDATE "paciente" SET sexo = true ,isencao = false,alta = true WHERE id=58;
+UPDATE "paciente" SET sexo = false ,isencao = false,alta = false WHERE id=59;
+UPDATE "paciente" SET sexo = true ,isencao = false,alta = false WHERE id=60;
+UPDATE "paciente" SET sexo = true ,isencao = false,alta = true WHERE id=61;
+UPDATE "paciente" SET sexo = false ,isencao = false,alta = true WHERE id=62;
+UPDATE "paciente" SET sexo = true ,isencao = true,alta = true WHERE id=63;
+UPDATE "paciente" SET sexo = true ,isencao = false,alta = true WHERE id=64;
+UPDATE "paciente" SET sexo = false ,isencao = false,alta = false WHERE id=65;
+UPDATE "paciente" SET sexo = true ,isencao = false,alta = false WHERE id=66;
+UPDATE "paciente" SET sexo = true ,isencao = false,alta = true WHERE id=67;
+UPDATE "paciente" SET sexo = false ,isencao = false,alta = true WHERE id=68;
+UPDATE "paciente" SET sexo = true ,isencao = true,alta = true WHERE id=69;
+UPDATE "paciente" SET sexo = true ,isencao = false,alta = true WHERE id=70;
+UPDATE "paciente" SET sexo = false ,isencao = false,alta = false WHERE id=71;
+UPDATE "paciente" SET sexo = true ,isencao = false,alta = false WHERE id=72;
+UPDATE "paciente" SET sexo = true ,isencao = false,alta = true WHERE id=73;
+UPDATE "paciente" SET sexo = false ,isencao = false,alta = true WHERE id=74;
+UPDATE "paciente" SET sexo = true ,isencao = true,alta = true WHERE id=75;
+UPDATE "paciente" SET sexo = true ,isencao = false,alta = true WHERE id=76;
+UPDATE "paciente" SET sexo = false ,isencao = false,alta = false WHERE id=77;
+UPDATE "paciente" SET sexo = true ,isencao = false,alta = false WHERE id=78;
+UPDATE "paciente" SET sexo = true ,isencao = false,alta = true WHERE id=79;
+UPDATE "paciente" SET sexo = false ,isencao = false,alta = true WHERE id=80;
+UPDATE "paciente" SET sexo = true ,isencao = true,alta = true WHERE id=81;
+UPDATE "paciente" SET sexo = true ,isencao = false,alta = true WHERE id=82;
+UPDATE "paciente" SET sexo = false ,isencao = false,alta = false WHERE id=83;
+UPDATE "paciente" SET sexo = true ,isencao = false,alta = false WHERE id=84;
+UPDATE "paciente" SET sexo = true ,isencao = false,alta = true WHERE id=85;
+UPDATE "paciente" SET sexo = false ,isencao = false,alta = true WHERE id=86;
+UPDATE "paciente" SET sexo = true ,isencao = true,alta = true WHERE id=87;
+UPDATE "paciente" SET sexo = true ,isencao = false,alta = true WHERE id=88;
+UPDATE "paciente" SET sexo = false ,isencao = false,alta = false WHERE id=89;
+UPDATE "paciente" SET sexo = true ,isencao = false,alta = false WHERE id=90;
+UPDATE "paciente" SET sexo = true ,isencao = false,alta = true WHERE id=91;
+UPDATE "paciente" SET sexo = false ,isencao = false,alta = true WHERE id=92;
+UPDATE "paciente" SET sexo = true ,isencao = true,alta = true WHERE id=93;
+UPDATE "paciente" SET sexo = true ,isencao = false,alta = true WHERE id=94;
+UPDATE "paciente" SET sexo = false ,isencao = false,alta = false WHERE id=95;
+UPDATE "paciente" SET sexo = true ,isencao = false,alta = false WHERE id=96;
+UPDATE "paciente" SET sexo = true ,isencao = false,alta = true WHERE id=97;
+UPDATE "paciente" SET sexo = false ,isencao = false,alta = true WHERE id=98;
+UPDATE "paciente" SET sexo = true ,isencao = true,alta = true WHERE id=99;
+UPDATE "paciente" SET sexo = true ,isencao = false,alta = true WHERE id=100;
