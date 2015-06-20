@@ -1,5 +1,4 @@
 -----------------------------------------SCRIPT BANCO SGAFisio-----------------------------------------------------
-CREATE DATABASE fisioterapia;
 
 create sequence sequence_usuario;
 create sequence sequence_anamnese;
@@ -174,13 +173,13 @@ ALTER TABLE supervisor ADD CONSTRAINT supervisor_uk UNIQUE (cpf);
 ALTER TABLE agenda ADD CONSTRAINT agenda_uk UNIQUE (data_agenda,hora);
 --------------------------------------------FOREIGN KEYS------------------------------------------------------
 --SECRETARIA --> (USUARIO)
-ALTER TABLE secretaria ADD CONSTRAINT secretaria_1_fk FOREIGN KEY (id_usuario) REFERENCES usuario (id);
+ALTER TABLE secretaria ADD CONSTRAINT secretaria_1_fk FOREIGN KEY (id_usuario) REFERENCES usuario (id) on delete cascade;
 
 --SUPERVISOR --> (USUARIO)
-ALTER TABLE supervisor ADD CONSTRAINT supervisor_1_fk FOREIGN KEY (id_usuario) REFERENCES usuario (id);
+ALTER TABLE supervisor ADD CONSTRAINT supervisor_1_fk FOREIGN KEY (id_usuario) REFERENCES usuario (id) on delete cascade;
 
 --ESTAGIARIO --> (USUARIO)
-ALTER TABLE estagiario ADD CONSTRAINT estagiario_1_fk FOREIGN KEY (id_usuario) REFERENCES usuario (id);
+ALTER TABLE estagiario ADD CONSTRAINT estagiario_1_fk FOREIGN KEY (id_usuario) REFERENCES usuario (id) on delete cascade;
 
 
 -- AGENDA --> (SECRETARIA, ESTAGIARIO, PACIENTE) --
